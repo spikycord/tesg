@@ -15,7 +15,7 @@ const EpisodeInfo = (props) => {
             </div>
         </div>
         <div className="pt-2 pb-8">
-              <iframe className="w-full aspect-video sm: pr-4 pl-4" src={embed_url + showid + seasonid + epid} frameBorder={`0`} allowFullScreen={true}></iframe>
+              <iframe className="w-full aspect-video sm: pr-4 pl-4" src={embed_url + showid + '/' + seasonid + '/' + epid} frameBorder={`0`} allowFullScreen={true}></iframe>
           </div>
           </div>
      );
