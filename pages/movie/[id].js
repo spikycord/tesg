@@ -18,12 +18,12 @@ export async function getServerSideProps({ query }) {
     })
     if (res.ok) {
         return {
-            props: { MovieDetail: data, genreArr }
+            props: { MovieDetail: data, genreArr, id }
         }
     }
   }
   
-  export default function MovieDetail({ MovieDetail, genreArr }) {
+  export default function MovieDetail({ MovieDetail, genreArr, id }) {
     return (
       <div className="popular-movies bg-zinc-900">
         <Head>
@@ -31,7 +31,7 @@ export async function getServerSideProps({ query }) {
         </Head>
         <Script src="https://arc.io/widget.min.js#d9siwAFU" />
         <Header />
-        <MovieInfo MovieDetail={MovieDetail} genreArr={genreArr}/>
+        <MovieInfo MovieDetail={MovieDetail} genreArr={genreArr} id={id}/>
         <Footer />
       </div>
     )
