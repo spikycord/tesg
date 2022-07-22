@@ -38,7 +38,7 @@ const MovieInfo = (props) => {
         <div className="pt-2 pb-8">
           <iframe
             className="w-full aspect-video sm: pr-4 pl-4"
-            src={'https://olgply.xyz/' + id}
+            src={'https://v2.vidsrc.me/embed/' + id}
             frameBorder={`0`}
             allowFullScreen={true}
           ></iframe>
