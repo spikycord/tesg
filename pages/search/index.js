@@ -11,7 +11,7 @@ const [query, setQuery] = useState('');
 const [data, setData] = useState()
 const [value] = useDebounce(query, 1000);
 
-const apiKey = '9e43f45f94705cc8e1d5a0400d19a7b7'
+const apiKey = '0906943683c096ef1be970d0bd0ba271'
 
 useEffect(async () => {
     if(query !== ''){
